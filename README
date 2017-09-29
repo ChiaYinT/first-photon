@@ -1,0 +1,8 @@
+Author:Chia-Yin Tsai (chiayint@andrew.cmu.edu)
+
+This code demonstrates how to use first-returning photons to process SPAD collected data.
+
+
+Please put the dataset from Buttufava et al. in data/
+
+main code in src/
