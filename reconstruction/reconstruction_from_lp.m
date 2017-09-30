@@ -34,7 +34,7 @@ for i = 1:size(sensor,2),
     
     [n(:,i), p(:,i)] = reconstruction_from_optimization(sensor(:,group_idx), light, distance(1,group_idx), option);
     
-    l0 = find_mirror_position(light, n(:,i), p(:,i));
+    option.l0 = find_mirror_position(light, n(:,i), p(:,i));
 end
 
 
