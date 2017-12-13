@@ -16,7 +16,6 @@ v4 = dataset.cameraOrigin - dataset.cameraPos;
 r4 = norm(v4);
 v4 = v4/r4;
 
-%cos_val = ((voxel_x-dataset.cameraPos(1))*v4(1) + (voxel_y-dataset.cameraPos(2))*v4(2) + (voxel_z-dataset.cameraPos(3))*v4(3))./d3;
 cos_val = (voxel_z-dataset.cameraPos(3))./d3;
 
 for i = 1:size(dataset.data,1),
@@ -33,7 +32,7 @@ for i = 1:size(dataset.data,1),
     end
 end
 
-save('value', 'value');
+save('../results/value', 'value');
 
 
 
@@ -49,4 +48,4 @@ end
 
 value_after_laplacian = value_after_laplacian/max(value_after_laplacian(:));
 
-save('value_after_laplacian', 'value_after_laplacian');
+save('../results/value_after_laplacian', 'value_after_laplacian');
