@@ -1,5 +1,5 @@
 clear; close all; clc;
-load '../data/dataset'
+load '../data/dataset1/dataset'
 
 threshold = 14;
 threshold_edge = 500;

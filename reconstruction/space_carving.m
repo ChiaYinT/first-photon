@@ -1,4 +1,4 @@
-function [X,Y,depth_map] = space_carving(light,sensor,distance,space_carving_X, space_carving_Y, space_carving_Z, option)
+function [X,Y,depth_map,occupancy] = space_carving(light,sensor,distance,space_carving_X, space_carving_Y, space_carving_Z, option)
 
 if isfield(option, 'z_direction')
     z_direction = option.z_direction;
@@ -7,8 +7,11 @@ else
 end
 
 pair_dist = dist(sensor);
-neighbor_size = 9;
-
+if isfield(option, 'neighbor_size')
+    neighbor_size = option.neighbor_size;
+else
+    neighbor_size = 9;
+end
 occupancy = ones(size(space_carving_Z));
 
 distance_to_light = sqrt((space_carving_X - light(1)).^2 + (space_carving_Y - light(2)).^2 + (space_carving_Z - light(3)).^2);

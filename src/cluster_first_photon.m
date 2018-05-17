@@ -1,7 +1,7 @@
 clear; clc; close all
 
 load 'results/first_photon_idx';
-load '../data/dataset';
+load '../data/dataset1/dataset';
 label = nan(size(first_photon_idx));
 idx = find(sum(~isnan(first_photon_idx),2)==4,1);
 label(idx,:) = 1:4;

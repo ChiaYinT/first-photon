@@ -3,7 +3,7 @@ clear; clc; close all;
 addpath('../util');
 addpath('../reconstruction');
 
-load '../data/dataset.mat';
+load '../data/dataset1/dataset.mat';
 
 s = dataset.laserPos';
 light = dataset.cameraPos';

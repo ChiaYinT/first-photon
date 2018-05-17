@@ -1,7 +1,7 @@
 clear; close all; clc;
 
 [voxel_x, voxel_y, voxel_z] = meshgrid(-120:2:70, -20:2:70, 0:2:140);
-load 'baseline/value_after_laplacian';
+load 'results/value_after_laplacian';
 
 
 threshold = 0.20;
