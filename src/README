@@ -1,8 +1,0 @@
-show_geometry.m show velten's optical setup
-
-find_first_photon.m use peak detection to find the first-returning photon of different parts of the scene
-cluster_first_photon.m find first-returning photons that are frome the same scene.
-
-main.m    create first-returning photon reconstruction
-main_multi_obj.m  create first-returning photon from all parts of the scene shape reconstruction
-create_figure.m show reconstruction results
