@@ -1,0 +1,32 @@
+# 1
+scene2
+plane1 [109,0,0] 60deg
+plane2 shown in scene2.png
+
+# 2
+scene3
+plane1 [109,0,0] 60deg
+plane2 shown in scene3.png
+
+# 3
+scene4
+plane1 [109,0,0] 60deg
+plane2 plane3 shown in scene4.png
+
+# 4
+scene5
+plane1 [109,0,0] 60deg
+plane2 plane3 shown in scene4.png
+
+
+# 5
+sphere1  
+center [-49 27 -57]
+
+# 6
+
+smallsphere2
+center [49,-40, -74.1]
+radius 7.6
+center [-51,10,-60.6]
+radius 7.6

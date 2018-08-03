@@ -31,13 +31,23 @@ for i = 1:size(space_carving_X,1)
     for j = 1:size(space_carving_X,2),
         if z_direction == 1,
             depth_idx = find(occupancy(i,j,:)==1,1);
+            if isempty(depth_idx)
+                depth_idx = size(occupancy,3);
+            end
         else            
             depth_idx = find(occupancy(i,j,:)==1,1,'last');
+            if isempty(depth_idx)
+                depth_idx = 1;
+            end
         end
-        if ~isempty(depth_idx)
+        
             %depth_map(i,j) = space_carving_Z(i,j,max(1,depth_idx-1));
             depth_map(i,j) = space_carving_Z(i,j,depth_idx);
-        end
+        
+            
+            
+        
+        
     end
 end
 

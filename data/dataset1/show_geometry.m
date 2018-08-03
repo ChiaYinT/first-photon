@@ -1,4 +1,5 @@
 close all; clear all; clc;
+addpath('..\..\util');
 load 'dataset.mat';
 
 s = dataset.laserPos';

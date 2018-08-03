@@ -1,0 +1,18 @@
+plane intercept 109
+
+15 -- 7500
+30 -- 7500
+45 -- 9500
+60 -- 9500
+75 -- 10500
+90 -- 11500
+105 -- 11500
+
+3_24_2017
+angle = 60
+plane intercept = [0, 117, 45.5]
+plane intercept = [0, 117, 66]
+plane intercept = [0, 117, 30]
+
+
+

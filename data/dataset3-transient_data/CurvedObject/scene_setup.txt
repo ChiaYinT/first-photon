@@ -1,0 +1,16 @@
+sphere1
+center  [630,325, -67]
+radius 27.06
+
+
+sphere2
+center [630,325, -85] 
+radius 27.06
+
+sphere3
+center [630, 325, -103]
+radius 27.06
+
+smallsphere1
+center [49,-40, -74.1]
+radius 7.6
